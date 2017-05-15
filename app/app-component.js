@@ -19,6 +19,7 @@ System.register(['angular2/core'], function(exports_1) {
             AppComponent = (function () {
                 function AppComponent() {
                 }
+                //funcao para ir do primeiro para o segunda bg
                 AppComponent.prototype.segundo = function () {
                     var primeiro = document.getElementById('bg-1');
                     primeiro.setAttribute("class", "hide");
@@ -26,6 +27,7 @@ System.register(['angular2/core'], function(exports_1) {
                     segundo.classList.remove("hide");
                     segundo.setAttribute("class", "col-sm-12 noPadding");
                 };
+                //funcao para voltar ao primeiro bg
                 AppComponent.prototype.primeiro = function () {
                     var primeiro = document.getElementById('bg-1');
                     primeiro.classList.remove("hide");
@@ -33,6 +35,7 @@ System.register(['angular2/core'], function(exports_1) {
                     var segundo = document.getElementById('bg-2');
                     segundo.setAttribute("class", "col-sm-12 noPadding hide");
                 };
+                //funcao para voltar ao segundo bg
                 AppComponent.prototype.VoltaSegundo = function () {
                     var segundo = document.getElementById('bg-2');
                     segundo.classList.remove("hide");
@@ -40,6 +43,7 @@ System.register(['angular2/core'], function(exports_1) {
                     var terceiro = document.getElementById('bg-3');
                     terceiro.setAttribute("class", "col-sm-12 noPadding hide");
                 };
+                //funcao para ir ao terceiro bg
                 AppComponent.prototype.terceiro = function () {
                     var terceiro = document.getElementById('bg-3');
                     terceiro.classList.remove("hide");

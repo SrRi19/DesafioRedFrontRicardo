@@ -1,0 +1,134 @@
+<!-- HTML da página -->
+<section id="total">
+  
+  <!--conteudo do lado esquerdo-->
+  <div class="col-xs-12 col-sm-4 noPadding">
+    
+    <!--LOGOMARCA-->
+    <div class="logo text-center">
+      <img src="app/view/assets/img/logo.jpg">
+    </div>
+    
+    <!-- ABAS DE NAVEGACAO -->
+    <div class="col-sm-12 edit-box">
+      <div class="col-sm-4 barra">
+        <h5>Round trip</h5>
+      </div>
+      <div class="col-sm-4">
+        <h5>One way</h5>
+      </div>
+      <div class="col-sm-4">
+        <h5>Multi-City</h5>
+      </div>
+    </div>
+
+    <!--FORMULARIO-->
+    <form id="formulario" class="col-sm-12" method="POST" action="" >
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label>Travel </label>
+            <input type="text" class="form-control" id="travelFrom" placeholder="Travel From">
+            <input type="text" class="form-control m-top-16" id="ravelTo" placeholder="Travel To">
+          </div>
+        </div>
+        
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Travel Date</label>
+            <input type="Date" class="form-control" id="dateGo" placeholder="Date Go">
+            <input type="Date" class="form-control" id="dateComeBack" placeholder="Date Come Back">
+          </div> 
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Passenger Datails</label>
+            <input type="number" class="form-control" id="dateGo" placeholder="1 Adult">
+            <input type="text" class="form-control" id="dateComeBack" placeholder="Economy">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Travel Stops</label>
+            <input type="number" class="form-control" id="dateGo" placeholder="Any Stops">
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="form-group">
+            <label>Travel time</label>
+            <input type="number" class="form-control" id="dateGo" placeholder="Any time">
+          </div>
+        </div>
+        <div class="col-sm-12 duration-box">
+          <img src="app/view/assets/img/duration.jpg">
+        </div>
+    </form>
+
+    <!-- FAC FINAL DO LADO ESQUERDO -->
+    <div class="col-sm-12 fac text-center">
+      <div class="col-sm-3">
+        <h6>Currency.EUR</h6>
+      </div>
+      <div class="col-sm-3">
+        <h6>Language.EN</h6>
+      </div>
+      <div class="col-sm-3">
+        <h6>Help</h6>
+      </div>
+      <div class="col-sm-3">
+        <h6>Privacy&Terms</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--conteudo do lado direito-->
+  <div class="col-xs-12 col-sm-8 noPadding " id="limit">
+    
+    <!-- PRIMEIRO FUNDO -->
+    <div id="bg-1" class="col-sm-12 noPadding">
+      <div class="texto-google text-center">
+        <h1>It's a big word. <br> Explore it just got easy. </h1>
+        <button class="btn btn-primary"> GET FLIGHTS </button> <span> Watch the video </span>
+        <div class="bg-btn" >
+          <i class="glyphicon glyphicon-chevron-down" style="margin-top: 170px;" (click)="segundo()"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEGUNDO FUNDO -->
+    <div id="bg-2" class="col-sm-12 noPadding hide">
+      <div class="second-text text-center">
+        <div class="bg-btn" >
+          <i class="glyphicon glyphicon-chevron-up" (click)="primeiro()" ></i>
+        </div>
+        <h1>Explore new destinations</h1>
+        <h4>find your destination and organize your trip in just a few moment</h4>
+        <div>
+          <img src="app/view/assets/img/second-tipe.jpg">
+        </div>
+        <div>
+          <img src="app/view/assets/img/travel.jpg">
+        </div>
+        <button class="btn btn-success">
+          EXPLORE MORE
+        </button>
+        <div class="bg-btn" >
+          <i class="glyphicon glyphicon-chevron-down" style="margin-top: 42px;" (click)="terceiro()"></i>
+        </div>
+        <div class="detalhe-bg-2">
+        </div>
+      </div>
+    </div>
+
+    <!-- TERCEIRO FUNDO -->
+    <div id="bg-3" class="col-sm-12 noPadding hide">
+      <div class="second-text text-center">
+        <div class="bg-btn" >
+          <i class="glyphicon glyphicon-chevron-up" style="margin-top: 600px;" (click)="VoltaSegundo()" ></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+

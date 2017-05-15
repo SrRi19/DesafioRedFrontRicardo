@@ -1,0 +1,91 @@
+
+#bg-1{
+	background-color: #0c67ff;
+	background: url("../img/bg-1md.jpg");
+	height: 700px;
+}
+#bg-1 .texto-google{
+	margin-top: 40%;
+	color: white
+}
+
+#bg-2{
+	background: url('../img/bg-2.jpg');
+	height: 700px;
+}
+
+#bg-2 .second-text{
+	color: white;
+	margin-top: 2%
+}
+
+#bg-3{
+	background: url(../img/bg-3.jpg) no-repeat;
+	width: 100%;
+	height: 100%;
+}
+.noPadding{
+	padding: 0; 
+}
+
+#limit{
+	overflow: hidden;
+    height: 700px;
+}
+
+.bg-btn{
+	cursor: pointer;
+}
+
+.bg-btn i{
+	width: 26px;
+	background: white;
+	padding: 5px;
+	border-radius: 50%;
+	border: #0c50bf 1px solid;
+	color: #3e3e3e;
+}
+
+.edit-box{
+	padding: 1px;
+    box-shadow: 1px 4px 6px grey;
+    margin: 5px 0px 14px 0px;
+}
+
+.edit-box h5{
+	text-align: center;
+}
+
+.fac{
+	background-color: #f9f9f9;
+	position:absolute;
+    bottom:0;
+    padding: 12px 0;
+}
+
+.duration-box{
+	height: 152px;
+    margin-top: 27px;
+}
+
+.m-top-16{
+	margin-top: 16px;
+}
+
+.logo{
+	margin-top: 26px
+}
+
+.detalhe-bg-2{
+	background: url('../img/detail-bg-2.jpg');
+	width: 299px;
+    height: 130px;
+}
+
+.barra{
+	border-bottom: 2px solid #0c50bf;
+}
+
+#formulario{
+	margin-bottom: 68PX;
+}

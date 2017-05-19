@@ -6,44 +6,27 @@ import {Component} from 'angular2/core';
 })
 export class AppComponent{
 	
-	//funcao para ir do primeiro para o segunda bg
-	segundo(){
-		var primeiro = document.getElementById('bg-1');
-		primeiro.setAttribute("class", "hide");
+	//funcao rolando para baixo
+	CimaBaixo(){
 
-		var segundo = document.getElementById('bg-2');
-		segundo.classList.remove("hide");
-		segundo.setAttribute("class", "col-sm-12 noPadding");
+		ini = window.scrollY
+	    var pos = ini;
+	    var id = setInterval(frame, 5);
+	    function frame() {
+	        if (pos == 700) {
+	            clearInterval(id);
+	        } else {
+	            pos++;
+	            window.scrollTo(0,pos);
+	        }
+	    }
 	}
 
-	//funcao para voltar ao primeiro bg
-	primeiro(){
-		var primeiro = document.getElementById('bg-1');
-		primeiro.classList.remove("hide");
-		primeiro.setAttribute("class", "col-sm-12 noPadding");
-		
-		var segundo = document.getElementById('bg-2');
-		segundo.setAttribute("class", "col-sm-12 noPadding hide");
-	}
-
-	//funcao para voltar ao segundo bg
-	VoltaSegundo(){
-		var segundo = document.getElementById('bg-2');
-		segundo.classList.remove("hide");
-		segundo.setAttribute("class", "col-sm-12 noPadding");
-		
-		var terceiro = document.getElementById('bg-3');
-		terceiro.setAttribute("class", "col-sm-12 noPadding hide");
-	}
-
-	//funcao para ir ao terceiro bg
-	terceiro(){
-		var terceiro = document.getElementById('bg-3');
-		terceiro.classList.remove("hide");
-		terceiro.setAttribute("class", "col-sm-12 noPadding");
-		
-		var segundo = document.getElementById('bg-2');
-		segundo.setAttribute("class", "col-sm-12 noPadding hide");
+	//funcao baixo para cima
+	BaixoCima(){
+		teste = document.getElementById("bg-2");
+		topo = teste.offsetTop;
+		window.scrollTo(0,topo);
 	}
 
 }

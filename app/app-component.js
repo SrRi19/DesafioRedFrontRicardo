@@ -19,37 +19,26 @@ System.register(['angular2/core'], function(exports_1) {
             AppComponent = (function () {
                 function AppComponent() {
                 }
-                //funcao para ir do primeiro para o segunda bg
-                AppComponent.prototype.segundo = function () {
-                    var primeiro = document.getElementById('bg-1');
-                    primeiro.setAttribute("class", "hide");
-                    var segundo = document.getElementById('bg-2');
-                    segundo.classList.remove("hide");
-                    segundo.setAttribute("class", "col-sm-12 noPadding");
+                //funcao rolando para baixo
+                AppComponent.prototype.CimaBaixo = function () {
+                    ini = window.scrollY;
+                    var pos = ini;
+                    var id = setInterval(frame, 5);
+                    function frame() {
+                        if (pos == 700) {
+                            clearInterval(id);
+                        }
+                        else {
+                            pos++;
+                            window.scrollTo(0, pos);
+                        }
+                    }
                 };
-                //funcao para voltar ao primeiro bg
-                AppComponent.prototype.primeiro = function () {
-                    var primeiro = document.getElementById('bg-1');
-                    primeiro.classList.remove("hide");
-                    primeiro.setAttribute("class", "col-sm-12 noPadding");
-                    var segundo = document.getElementById('bg-2');
-                    segundo.setAttribute("class", "col-sm-12 noPadding hide");
-                };
-                //funcao para voltar ao segundo bg
-                AppComponent.prototype.VoltaSegundo = function () {
-                    var segundo = document.getElementById('bg-2');
-                    segundo.classList.remove("hide");
-                    segundo.setAttribute("class", "col-sm-12 noPadding");
-                    var terceiro = document.getElementById('bg-3');
-                    terceiro.setAttribute("class", "col-sm-12 noPadding hide");
-                };
-                //funcao para ir ao terceiro bg
-                AppComponent.prototype.terceiro = function () {
-                    var terceiro = document.getElementById('bg-3');
-                    terceiro.classList.remove("hide");
-                    terceiro.setAttribute("class", "col-sm-12 noPadding");
-                    var segundo = document.getElementById('bg-2');
-                    segundo.setAttribute("class", "col-sm-12 noPadding hide");
+                //funcao baixo para cima
+                AppComponent.prototype.BaixoCima = function () {
+                    teste = document.getElementById("bg-2");
+                    topo = teste.offsetTop;
+                    window.scrollTo(0, topo);
                 };
                 AppComponent = __decorate([
                     core_1.Component({

@@ -2,7 +2,7 @@
 <section id="total">
   
   <!--conteudo do lado esquerdo-->
-  <div class="col-xs-12 col-sm-4 noPadding">
+  <div class="col-xs-12 col-sm-4 noPadding" id="limit">
     
     <!--LOGOMARCA-->
     <div class="logo text-center">
@@ -81,7 +81,7 @@
   </div>
 
   <!--conteudo do lado direito-->
-  <div class="col-xs-12 col-sm-8 noPadding " id="limit">
+  <div class="col-xs-12 col-sm-8 noPadding alinhado-direita" >
     
     <!-- PRIMEIRO FUNDO -->
     <div id="bg-1" class="col-sm-12 noPadding">
@@ -89,17 +89,14 @@
         <h1>It's a big word. <br> Explore it just got easy. </h1>
         <button class="btn btn-primary"> GET FLIGHTS </button> <span> Watch the video </span>
         <div class="bg-btn" >
-          <i class="glyphicon glyphicon-chevron-down" style="margin-top: 170px;" (click)="segundo()"></i>
+          <i id="down-btn" class="glyphicon glyphicon-chevron-down" style="margin-top: 170px;" (click)="CimaBaixo()"></i>
         </div>
       </div>
     </div>
 
     <!-- SEGUNDO FUNDO -->
-    <div id="bg-2" class="col-sm-12 noPadding hide">
+    <div id="bg-2" class="col-sm-12 noPadding ">
       <div class="second-text text-center">
-        <div class="bg-btn" >
-          <i class="glyphicon glyphicon-chevron-up" (click)="primeiro()" ></i>
-        </div>
         <h1>Explore new destinations</h1>
         <h4>find your destination and organize your trip in just a few moment</h4>
         <div>
@@ -108,22 +105,19 @@
         <div>
           <img src="app/view/assets/img/travel.jpg">
         </div>
-        <button class="btn btn-success">
+        <button class="btn btn-success margin-55">
           EXPLORE MORE
         </button>
-        <div class="bg-btn" >
-          <i class="glyphicon glyphicon-chevron-down" style="margin-top: 42px;" (click)="terceiro()"></i>
-        </div>
         <div class="detalhe-bg-2">
         </div>
       </div>
     </div>
 
     <!-- TERCEIRO FUNDO -->
-    <div id="bg-3" class="col-sm-12 noPadding hide">
+    <div id="bg-3" class="col-sm-12 noPadding">
       <div class="second-text text-center">
         <div class="bg-btn" >
-          <i class="glyphicon glyphicon-chevron-up" style="margin-top: 600px;" (click)="VoltaSegundo()" ></i>
+          <i class="glyphicon glyphicon-chevron-up" style="margin-top: 600px;" (click)="BaixoCima()"></i>
         </div>
       </div>
     </div>

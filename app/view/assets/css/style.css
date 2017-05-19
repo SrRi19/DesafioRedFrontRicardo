@@ -29,8 +29,7 @@
 }
 
 #limit{
-	overflow: hidden;
-    height: 700px;
+	position: fixed;
 }
 
 .bg-btn{
@@ -88,4 +87,12 @@
 
 #formulario{
 	margin-bottom: 68PX;
+}
+
+.alinhado-direita{
+	float: right;
+}
+
+.margin-55{
+    margin: 55px 0;
 }

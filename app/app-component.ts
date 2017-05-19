@@ -8,15 +8,14 @@ export class AppComponent{
 	
 	//funcao rolando para baixo
 	CimaBaixo(){
-
-		ini = window.scrollY
+		ini = window.scrollY;
 	    var pos = ini;
 	    var id = setInterval(frame, 5);
 	    function frame() {
-	        if (pos == 700) {
+	        if (pos == 700 || pos > 700) {
 	            clearInterval(id);
 	        } else {
-	            pos++;
+	            pos = pos + 10;
 	            window.scrollTo(0,pos);
 	        }
 	    }
@@ -24,9 +23,17 @@ export class AppComponent{
 
 	//funcao baixo para cima
 	BaixoCima(){
-		teste = document.getElementById("bg-2");
-		topo = teste.offsetTop;
-		window.scrollTo(0,topo);
+		ini = window.scrollY;
+	    var pos = ini;
+	    var id = setInterval(frame, 5);
+	    function frame() {
+	        if (pos == 700 || pos < 700) {
+	            clearInterval(id);
+	        } else {
+	            pos = pos - 10;
+	            window.scrollTo(0,pos);
+	        }
+	    }
 	}
 
 }
